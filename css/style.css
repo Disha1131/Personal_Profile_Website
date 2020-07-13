@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Scrolling effect */
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    width: 100%;
+    /* height: 100%; */
+}
+/* ------------------------------- HOME --------------------------------------- */
+/* Home page Left Box for content and logo */
+#home{
+    height: 115vh;
+}
+
+#left {
+    display: block;
+    /* border: solid 2px black; */
+    max-width: 44%;
+    /* height: 696px; */
+    height: 115vh;
+    /* height: 100%; */
+    background-color: black;
+    /* opacity: 1; */
+    /* filter: brightness(120%); */
+    /* box-shadow: 0 0 8px 8px white inset; */
+    padding-left: 2vw;
+}
+
+/* Top most logo */
+#toplogo {
+    position: fixed;
+    margin-top: 1.3rem;
+    z-index: 10;
+    /* margin-left: 1.3rem; */
+}
+
+/* image fading property */
+.parallax {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* The image used */
+    background-image: url('../img/meb.jpg');
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    /* Set a specific height */
+    /* min-height: 800px; */
+    height: 115vh;
+    width: 100vw;
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* blur the edges */
+    /* box-shadow: 0 0 8px 8px white inset; */
+    opacity: 0.8;
+    /* filter: brightness(50%); */
+  }
+
+/* name svg */
+#name{
+    position: absolute;
+    top: 32.6vh;
+    /* animation: fill 3s ease forwards 5.5s; */
+}
+
+/* Title */
+#title {
+    position: absolute;
+    top: 43vh;
+}
+
+/* Description */
+.description {
+    position: absolute;
+    top: 75vh;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: light;
+    font-family: 'Oswald', sans-serif;
+    max-width: 40%;
+    /* -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(168, 160, 160); */
+}
+
+/* Main navigation Bar on the right side on Home Page */
+.main-nav {
+    position: absolute;
+    bottom: 5vh;
+    right: 2vw;
+}
+
+nav>ul{
+    list-style: none;
+}
+
+nav .m-list-item, nav .list-item{
+    display: inline-block;
+    position: relative;
+    font-size: 1.6rem;
+    padding: 0.7rem 0.7rem;
+}
+
+nav .m-list-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Proxima Nova Regular,serif;
+}
+
+nav .m-list-item .active,nav .m-list-item a:active{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* For Navigation bars of all pages except home page */
+.sub-nav {
+    /* background-color: red; */
+    position: relative;
+    top: 16.3rem;
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+
+}
+nav .list-item a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-family: Proxima Nova Regular,serif;
+}
+
+nav .list-item .active,nav .list-item a:active{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/*--------------------------------- ABOUT PAGE --------------------------------------*/
+#about{
+    /* border: 4px black solid; */
+    /* border-top: rgb(240, 204, 210) 1px solid; */
+    /* height: 697px; */
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    /* margin: 3.3rem 2.3rem; */
+}
+
+.about-head{
+    border: 4px black solid;
+    /* border-top: 0.2px white solid; */
+    
+}
+
+.about-text{
+    border: 1px lightgrey;
+    right: 0;
+    background-color:rgb(240, 204, 210);
+}
+
+/* To set the color of about heading */
+.about-head h2 {
+    color: rgb(240, 204, 210);
+}
+
+/* ------------------------------ WORK PAGE -------------------------------------- */
+#work{
+    border-top: white 1.5px solid;
+    /* border-top: pink 1px solid; */
+    /* height: 697px; */
+    height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    /* margin: 3.3rem 2.3rem; */
+}
+
+.work-head{
+    border: 4px black solid;
+    /* border-top: 0.2px white solid; */
+    
+}
+
+.work-text{
+    /* border: 1px lightgrey; */
+    right: 0;
+    background-color:white;
+}
+
+/* To set the color of work heading */
+.work-head h2 {
+    color: white;
+}
+
+/* ------------------------------ CONTACT PAGE -------------------------------------- */
+#contact{
+    border-top: rgb(184, 179, 179) 3px solid;
+    /* border-top: pink 1px solid; */
+    /* height: 697px; */
+    height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    /* margin: 3.3rem 2.3rem; */
+}
+
+.contact-head{
+    border: 4px black solid;
+    /* border-top: 0.2px white solid; */
+    
+}
+
+.contact-text{
+    /* border: 1px lightgrey; */
+    right: 0;
+    background-color:rgb(184, 179, 179);
+}
+
+/* To set the color of work heading */
+.contact-head h2 {
+    color: rgb(184, 179, 179);
+}
+
+/* ------------------------------------ Footer ---------------------------------- */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 7vh;
+    margin-top: 0.3vh;
+}
+
+/* Utility classes */
+/* Class for heading section on a page */
+.head {
+    width: 44%;
+    /* height: 697px; */
+    background-color: black;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Class for text section on a page */
+.text {
+    width: 56%;
+    /* height: 697px; */
+    /* display: inline-block; */
+    display: flex;
+}
+
+/* To write headings on heading sections */
+h2{
+    /* background-color:yellow; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.8em;
+}
+
+/* For heading of the page in middle  */
+.heading{
+    /* To position the title in center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
