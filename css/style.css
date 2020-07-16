@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* Scrolling effect */
 html {
     scroll-behavior: smooth;
@@ -13,6 +14,61 @@ body{
     width: 100%;
     /* height: 100%; */
 }
+
+/*--------------------------------- UTILITY CLASSES ---------------------------------*/
+/* Class for heading section on a page */
+.head {
+    /* position: fixed; */
+    width: 44%;
+    /* height: 697px; */
+    background-color: black;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Class for text section on a page */
+.text {
+    width: 56%;
+    /* height: 100vh; */
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 6.3vh 5.3vw; */
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5em;
+    text-align: justify;
+    /* overflow: auto; */
+}
+
+/* To write headings on heading sections */
+h2{
+    /* background-color:yellow; */
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Kaushan Script', cursive; */
+    font-size: 4.8em;
+}
+
+/* For heading of the page in middle  */
+.heading{
+    /* To position the title in center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* For Text headings and content */
+.bold {
+    font-weight: bolder;
+}
+
+.light {
+    font-weight: normal;
+}
+
 /* ------------------------------- HOME --------------------------------------- */
 /* Home page Left Box for content and logo */
 #home{
@@ -160,18 +216,32 @@ nav .list-item .active,nav .list-item a:active{
 .about-head{
     border: 4px black solid;
     /* border-top: 0.2px white solid; */
-    
+    /* flex: 1 0 auto; */
 }
 
 .about-text{
     border: 1px lightgrey;
     right: 0;
     background-color:rgb(240, 204, 210);
+    padding: 6.3vh 7.3vw;
+    /* position: fixed;
+    left: 0;
+    z-index: 10; */
+    /* overflow-y: scroll; */
+    /* flex: 1 1 auto; */
+    overflow: auto;
+    /* scroll-snap-type: y mandatory; */
+    overflow-y: auto;
 }
 
 /* To set the color of about heading */
 .about-head h2 {
     color: rgb(240, 204, 210);
+}
+
+.grey {
+    color: grey;
+    font-size: 1.0em;
 }
 
 /* ------------------------------ WORK PAGE -------------------------------------- */
@@ -198,6 +268,10 @@ nav .list-item .active,nav .list-item a:active{
     /* border: 1px lightgrey; */
     right: 0;
     background-color:white;
+    /* display: flex;
+    flex-direction: row; */
+    /* align-content: flex-start; */
+
 }
 
 /* To set the color of work heading */
@@ -247,38 +321,3 @@ nav .list-item .active,nav .list-item a:active{
     margin-top: 0.3vh;
 }
 
-/* Utility classes */
-/* Class for heading section on a page */
-.head {
-    width: 44%;
-    /* height: 697px; */
-    background-color: black;
-    /* display: inline-block; */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-/* Class for text section on a page */
-.text {
-    width: 56%;
-    /* height: 697px; */
-    /* display: inline-block; */
-    display: flex;
-}
-
-/* To write headings on heading sections */
-h2{
-    /* background-color:yellow; */
-    font-family: 'Dancing Script', cursive;
-    font-size: 4.8em;
-}
-
-/* For heading of the page in middle  */
-.heading{
-    /* To position the title in center */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
